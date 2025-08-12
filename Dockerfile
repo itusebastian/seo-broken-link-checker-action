@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y \
   libxml2-dev \
   libxslt1-dev
 
+RUN python3.12 -m pip install --upgrade pip && \
+  python3.12 -m pip install requests lxml PyYAML beautifulsoup4
+
 COPY broken_link_checker.py /usr/bin/broken_link_checker.py
 
 COPY entrypoint.sh /entrypoint.sh
