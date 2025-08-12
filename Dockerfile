@@ -18,4 +18,6 @@ COPY broken_link_checker.py /usr/bin/broken_link_checker.py
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
