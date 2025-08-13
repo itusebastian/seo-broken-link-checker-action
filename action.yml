@@ -1,4 +1,4 @@
-name: "Broken Link Checker"
+name: "SEO Broken Link Checker"
 author: "Sebastián Iturralde"
 description: "Checks your website sitemap for broken links and generates a report."
 runs:
